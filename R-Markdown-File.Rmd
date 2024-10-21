@@ -1,0 +1,17 @@
+---
+title: "R-Markdown File"
+author: "Ogulcan Alkan"
+date: "2024-10-21"
+output: html_document
+---
+
+```{r transform}
+transform_data <- function(data) {
+  data$mpg_squared <- data$mpg ^ 2
+  return(data)
+}
+
+transformed_data <- transform_data(mtcars)
+
+head(transformed_data)
+```
