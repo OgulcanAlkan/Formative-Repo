@@ -18,9 +18,9 @@ head(transformed_data)
 
 
 ```{r normalize}
-add_ten_to_mpg <- function(data) {
-  data$mpg <- data$mpg + 10
-  return(data)
+add_ten_to_mpg <- function(data_new) {
+  data_new$mpg <- data_new$mpg + 10
+  return(data_new)
 }
 
 modified_data <- add_ten_to_mpg(mtcars)
