@@ -15,3 +15,16 @@ transformed_data <- transform_data(mtcars)
 
 head(transformed_data)
 ```
+
+
+```{r normalize}
+add_ten_to_mpg <- function(data) {
+  data$mpg <- data$mpg + 10
+  return(data)
+}
+
+modified_data <- add_ten_to_mpg(mtcars)
+
+head(modified_data)
+```
+
